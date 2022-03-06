@@ -18,10 +18,12 @@ $light-color:#aaa;
 $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 
 @mixin grid($val){
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax($var,1fr));
-    gap: 2rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 1.5em;
 }
+
+
 
 html {
     font-size: 62.5%;
@@ -230,32 +232,17 @@ section{
 
         }
     }
-
-    }
+ }
         
-.skills{
-    .box-container{
-        @include grid(16rem);
 
-        .box{
-            padding:2rem;
-            text-align: center;
-            box-shadow: $box-shadow;
-            border-radius: 60%;
-            background:$light-bg;
-            img{
-                height:7rem;
-                margin-bottom: 1rem;
-            }
-            h3{
-                color:$white;
-                font-size: 20px;
-                font-style: oblique;
-                font-weight: normal;
-            }
-        }
-    }
-}
+
+
+
+
+
+
+ 
+
 //media queries
 
 @media (max-width:1200px){
